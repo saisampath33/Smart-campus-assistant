@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    /* color: hsl(240, 2%, 92%); */
+    color: #2575fc;
+}
+
+/* Header Styles */
+.main-header {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+.hero-section {
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+/* Downloads Section */
+.downloads-section {
+    padding: 4rem 0;
+    background-color: #fff;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.book-card {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.book-card h3 {
+    color: #2575fc;
+    margin-bottom: 0.5rem;
+}
+
+.book-card p {
+    margin-bottom: 1rem;
+    color: #666;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #2575fc;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #6a11cb;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #1931d1;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-footer p {
+    margin: 0;
+}   

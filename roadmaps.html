@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Assistant - Roadmaps</title>
+    <!-- <link rel="stylesheet" href="styleresources.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        /* Navbar Styling */
+        .main-header {
+            background-color: #0a74da;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:1px 20px;
+        }
+
+        .navbar h1 {
+            color: white;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            padding: 6px 12px;
+            border-radius: 4px;
+            transition: background 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Roadmaps Section */
+        .roadmaps {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .roadmaps h1 {
+            font-size: 2.5rem;
+            color: #0a74da;
+            margin-bottom: 20px;
+        }
+
+        .roadmaps p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 40px;
+        }
+
+        .roadmap-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 0 20px;
+        }
+
+        .roadmap-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 1px solid #e0e0e0;
+        }
+
+        .roadmap-item:hover {
+            transform: translateY(10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .roadmap-item h2 {
+            font-size: 1.75rem;
+            color: #0a74da;
+            margin-bottom: 10px;
+        }
+
+        .roadmap-item p {
+            font-size: 1rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .roadmap-item a {
+            display: inline-block;
+            background-color: #0a74da;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+
+        .roadmap-item a:hover {
+            background-color: #095bb5;
+        }
+  
+
+
+        @media (max-width: 768px) {
+            .roadmap-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        footer {
+            background-color: #0a74da;
+            padding: 1px 20px;
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <h1>Smart Campus Assistant</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Resources.html">Student Resources</a></li>
+                <li><a href="Event.html">Events</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="roadmaps">
+        <h1>Student Roadmaps</h1>
+        <p>Select a roadmap to plan your academic or career goals:</p>
+        
+        <div class="roadmap-container">
+            <div class="roadmap-item">
+                <h2>Frontend Roadmap</h2>
+                <p>Learn how to become a frontend developer from beginner to advanced.</p>
+                <a href="road/frontend.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>Backend Beginner</h2>
+                <p>Get started with Backend development from the beginning.</p>
+                <a href="road/backend.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>DevOps Roadmap</h2>
+                <p>Follow this path to become a successful software engineer.</p>
+                <a href="road/devops.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>Full-Stack Developer Roadmap</h2>
+                <p>Master the skills required to become a full-stack developer.</p>
+                <a href="road/full-stack.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>Android Developer Roadmap</h2>
+                <p>Start your journey to become an Android developer.</p>
+                <a href="road/android.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>UX Design</h2>
+                <p>Learn the essentials of user interface and user experience design.</p>
+                <a href="road/ux-design.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>Block Chain</h2>
+                <p>Dive into blockchain technology and its applications.</p>
+                <a href="road/blockchain.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>AI/ML DataScientist</h2>
+                <p>data analysis, predictions, machine learning model construction.</p>
+                <a href="road/AI and ML.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>Cyber security</h2>
+                <p>Become a ethical hacker to learn new skills to prevent and be a defensive from attackers.</p>
+                <a href="road/CyberSecurity Engineer.pdf">View Roadmap</a>
+            </div>
+            <div class="roadmap-item">
+                <h2>Cloud Computing</h2>
+                <p>Understand the roadmap of AWS Server and cloud based architecture</p>
+                <a href="road/AWS Roadmap.pdf">View Roadmap</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Smart Campus Assistant | <a href="contactus.html">Contact Us</a></p>
+    </footer>
+    
+</body>
+</html>

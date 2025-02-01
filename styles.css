@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .main-header {
+    position: relative;
+    height: 100vh;
+    background: linear-gradient(to right, #8216f5, #2575fc);
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  .hero-section {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    z-index: 2;
+    text-align: center;
+    color: #fff;
+  }
+  
+  .cta-button {
+    padding: 10px 30px;
+    background-color: #fff;
+    color: #185dd3;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #6417b7;
+    color: #fff;
+  }
+  
+  /* Slideshow Styles */
+  .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .slide {
+    display: none;
+    position: relative;
+  }
+  
+  img {
+    width: 100%;
+    display: block;
+    filter: brightness(1.0); /* Lower the brightness */
+  }
+  
+  .slide::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Gradient overlay */
+    z-index: 1;
+  }
+  
+  /* Slide animation */
+  .fade {
+    animation: fadeEffect 1.5s ease-in-out;
+  }
+  
+  @keyframes fadeEffect {
+    from {opacity: 0.4} 
+    to {opacity: 1}
+  }
+  
+  /* Section Styles */
+  .about-section,
+  .services-section {
+    padding: 40px 5;
+    text-align: center;
+  }
+  
+  .service-card {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f1f4f9;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  .main-footer {
+    background-color: #2575fc;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  

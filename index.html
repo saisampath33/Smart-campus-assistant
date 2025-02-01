@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Assistant</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="main-header">
+<nav class="navbar">
+    <h1 style="display: inline; margin: 0;">Smart Campus Assistant</h1>
+    <ul class="nav-links">
+    
+    <li><a href="Event.html" >Events</a></li>
+    <li><a href="roadmaps.html" ">RoadMaps</a></li>
+    <li><a href="Resources.html" >Student Resources</a></li>
+    <li><a href="contactus.html" >Contact Us</a></li>
+    </ul>
+</nav>
+
+<div class="slideshow-container">
+    <div class="slide fade">
+        <img src="https://images.bzyjr9ji.ext.evbdomains.com/marketing/landingpages/assets/2023/organizer/a_organizer_event--creator-eventbrite-.webp" alt="Campus Event">
+    </div>
+</div>
+
+<div class="hero-section">
+    <br><br><br><br><br><br><br>
+    <h1>Welcome to our Assistance</h1>
+    <br>
+    <h3>Discover beauty, design, and functionality all in one place.</h3>
+    <br><br>
+    <a href="#about" class="cta-button">Explore Now</a>
+</div>
+</header>
+
+<section id="about" class="about-section">
+<div class="container">
+    <br><br>
+    <h2>About Us</h2>
+    <br>
+    <p>We provide exceptional web solutions, ensuring that design and usability blend seamlessly. Our team is passionate about creating digital experiences that resonate with users.
+        <b><br>We provide Administrative support, Academic support, Event coordination, and Customer service</b><br><br><br>
+    </p>
+</div>
+</section>
+
+<section id="services" class="services-section">
+<div class="container">
+    <h2>Our Services</h2>
+    <br>
+    <div class="service-card">
+    <a href="Event.html"><h3>Duty Leave Monitoring</h3></a>
+    <p>Schedules, Event Timing, Venues, and Online Attendance.</p><br>
+    </div>
+    <div class="service-card">
+    <a href="roadmaps.html"><h3>Roadmaps</h3></a>
+    <p>Developing high-effective, scalable RoadMaps to grow instantly.</p><br>
+    </div>
+    <div class="service-card">
+    <a href="Resources.html"><h3>Placement Resources</h3></a>
+    <p>Contains all the Resources for Placement preparation.</p><br>
+    </div>
+</div>
+</section>
+
+<footer class="main-footer">
+<div class="container">
+    <p>&copy; 2024 Student Campus Assistant, All Rights Reserved.</p>
+    <br>
+    <p>    
+        <mark><b>Team-Hackathon</b> <br></mark>
+        Sampath Kumar Korada <br>
+         A Chaithanya Kumar <br>
+             Suru Prem Kumar 
+    </p>
+</div>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        let dots = document.getElementsByClassName("dot");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 4 seconds
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+</script>
+</body>
+</html>
